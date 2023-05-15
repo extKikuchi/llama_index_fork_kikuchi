@@ -4,10 +4,10 @@ from pathlib import Path
 import os
 from setuptools import find_packages, setup
 
-DEFAULT_PACKAGE_NAME = "llama_index"
+DEFAULT_PACKAGE_NAME = "llama_index_fork"
 PACKAGE_NAME = os.environ.get("PACKAGE_NAME_OVERRIDE", DEFAULT_PACKAGE_NAME)
 
-with open(Path(__file__).absolute().parents[0] / "llama_index" / "VERSION") as _f:
+with open(Path(__file__).absolute().parents[0] / "llama_index_fork" / "VERSION") as _f:
     __version__ = _f.read().strip()
 
 with open("README.md", "r", encoding="utf-8") as f:
@@ -38,7 +38,7 @@ setup(
     install_requires=install_requires,
     long_description=long_description,
     license="MIT",
-    url="https://github.com/jerryjliu/llama_index",
+    url="https://github.com/extKikuchi/llama_index_fork_kikuchi",
     include_package_data=True,
     long_description_content_type="text/markdown",
 )

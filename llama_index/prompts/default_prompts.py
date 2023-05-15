@@ -107,7 +107,7 @@ DEFAULT_TEXT_QA_PROMPT_TMPL = (
     "---------------------\n"
     "{context_str}"
     "\n---------------------\n"
-    "Given the context information and not prior knowledge, "
+    "Integrating Prior Knowledge and Contextual Information, "
     "answer the question: {query_str}\n"
 )
 DEFAULT_TEXT_QA_PROMPT = QuestionAnswerPrompt(DEFAULT_TEXT_QA_PROMPT_TMPL)
