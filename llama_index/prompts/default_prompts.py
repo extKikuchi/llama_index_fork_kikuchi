@@ -101,13 +101,18 @@ DEFAULT_REFINE_PROMPT_TMPL = (
 )
 DEFAULT_REFINE_PROMPT = RefinePrompt(DEFAULT_REFINE_PROMPT_TMPL)
 
-
+#テスト用
+"""
 DEFAULT_TEXT_QA_PROMPT_TMPL = (
     "Context information is below. \n"
     "---------------------\n"
     "{context_str}"
     "\n---------------------\n"
     "Integrating Prior Knowledge and Contextual Information, "
+    "answer the question: {query_str}\n"
+)
+"""
+DEFAULT_TEXT_QA_PROMPT_TMPL = (
     "answer the question: {query_str}\n"
 )
 DEFAULT_TEXT_QA_PROMPT = QuestionAnswerPrompt(DEFAULT_TEXT_QA_PROMPT_TMPL)
