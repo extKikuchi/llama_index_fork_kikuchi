@@ -113,6 +113,8 @@ DEFAULT_TEXT_QA_PROMPT_TMPL = (
 )
 """
 DEFAULT_TEXT_QA_PROMPT_TMPL = (
+    "{context_str}"
+    "Please ignore the above sentences"
     "answer the question: {query_str}\n"
 )
 DEFAULT_TEXT_QA_PROMPT = QuestionAnswerPrompt(DEFAULT_TEXT_QA_PROMPT_TMPL)
