@@ -108,7 +108,7 @@ DEFAULT_TEXT_QA_PROMPT_TMPL = (
     "---------------------\n"
     "{context_str}"
     "\n---------------------\n"
-    "Integrating Prior Knowledge and Contextual Information, "
+    "Based on the content of the context, combined with the Prior Knowledge, "
     "answer the question: {query_str}\n"
 )
 
